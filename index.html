@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #main{
+            width:50%;
+            height:60vh;
+            display:flex;
+            position:relative;
+            top:20px;
+        }
+        #left{
+            
+            width:50%;
+            height:60vh;
+            display:inline-block;
+        }
+        #left>div{
+            
+            height:30vh;
+        }
+        .image img{
+         width:200px;
+         height:200px;
+       
+        box-sizing: border-box;
+        
+        }
+
+        .image{
+        padding:40% 20% 10% 30%;
+        position: relative;
+        top:10px;
+        }
+        #right{
+            height:60vh;
+            width:50%;
+            display:inline-block;
+            background-color: rgb(99,105,64);
+        }
+        #top{
+            background-color: rgb(89,169,106);
+          
+        }
+        #bottom{
+            background: linear-gradient(90deg, rgb(105 108 216),rgb(9 183 109));
+        }
+        .circle {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top:25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background-color: rgb(193,255,114)
+;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+       <div id="left">
+            <div id="top"></div>
+            <div id="bottom"></div>
+        </div>
+    
+        <div id="right">
+            <div class="image">
+                <img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" alt="cat-image"/>
+                </div>
+              
+        </div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
